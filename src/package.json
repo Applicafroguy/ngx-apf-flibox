@@ -1,0 +1,28 @@
+{
+    "name": "ngx-apf-flipbox",
+    "version": "0.1.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Applicafroguy/ngx-apf-flibox"
+    },
+    "author": {
+        "name": "Sivuyile Magutywa",
+        "email": "s.magutywa@applicafro.co.za"
+    },
+    "keywords": [
+        "angular"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Applicafroguy/ngx-apf-flibox/issues"
+    },
+    "main": "ngx-apf-flipbox.umd.js",
+    "module": "ngx-apf-flipbox.js",
+    "jsnext:main": "ngx-apf-flipbox.js",
+    "typings": "ngx-apf-flipbox.d.ts",
+    "peerDependencies": {
+        "@angular/core": "^4.0.0",
+        "rxjs": "^5.1.0",
+        "zone.js": "^0.8.4"
+    }
+}
