@@ -51,20 +51,6 @@ Once your library is imported, you can use its components in your Angular applic
 <apf-flipbox></apf-flipbox>
 ```
 
-## Development
-
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
-
-```bash
-$ npm run build
-```
-
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
-
 ## License
 
 MIT © [Sivuyile Magutywa](mailto:s.magutywa@applicafro.co.za)
