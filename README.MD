@@ -41,7 +41,7 @@ import { FlipBoxModule } from 'ngx-apf-flipbox';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once your library is imported, you can use its components in your Angular application:
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
