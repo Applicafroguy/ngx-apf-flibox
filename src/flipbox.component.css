@@ -1,0 +1,79 @@
+#apf_container {
+    position: relative;
+    margin: 0px auto;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+}
+
+#apf_container {
+    perspective: 1000;
+}
+
+#apf_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+    text-align: center;
+}
+
+#apf_container:hover #apf_card {
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 5px #aaa;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.face.front {
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    background-color: #ff7e70;
+    color: white;
+}
+
+.face.front .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.face.front .content i {
+    border-radius: 500em!important;
+    line-height: 1!important;
+    padding: .5em .5em!important;
+    box-shadow: 0 0 0 0.1em rgba(0, 0, 0, .1) inset;
+    width: 2em!important;
+    height: 2em!important;
+}
+
+.face.front .content .title {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding-bottom: 0px;
+    color: rgba(0, 0, 0, .87);
+}
+
+.face.front .content .sub-title {
+    margin-top: 5px;
+    padding-top: 0px;
+    font-size: 1.13em;
+    color: rgba(0, 0, 0, .6);
+}
+
+.face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 30px 10px 10px 10px;
+    color: white;
+    text-align: center;
+    background-color: #aaa;
+}

@@ -1,3 +1,4 @@
+import { FlipBoxModule } from './../src/index';
 
 /**
  * This is only for local test
@@ -7,11 +8,10 @@ import { NgModule } from '@angular/core';
 import { Component } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { FlipBoxModule }  from 'ngx-apf-flipbox';
 
 @Component({
   selector: 'app',
-  template: `<apf-flipbox></apf-flipbox>`
+  template: `<apf-flipbox [front]="front" [back]="back"></apf-flipbox>`
 })
 class AppComponent {}
 
@@ -20,6 +20,18 @@ class AppComponent {}
   declarations: [ AppComponent ],
   imports: [ BrowserModule, FlipBoxModule ]
 })
-class AppModule {}
+class AppModule {
+  title = 'My Title';
+  front: {
+    title: 'My Title',
+    subtitle: 'subtitle',
+    icon: 'icon'
+  }
+
+  back: {
+    title: 'My Title Back',
+    content: 'I am back content',
+  }
+}
 
 platformBrowserDynamic().bootstrapModule(AppModule);
