@@ -68,7 +68,7 @@ Once your library is imported, you can use its components in your Angular applic
 ```bash
 | Input              | Description               | Data Type | Example                               |
 | -------------------|:-------------------------:| ---------:| -------------------------------------:|
-| # Front                                                                                            |
+| # Front Side                                                                                       |
 | frontTitle         | Front Title               | string    | "Mobile Phones"                       |
 | frontSubTitle      | Front SubTitle            | string    | "smart"                               |
 | iconCode           | font awesome css class    | array     | ['fa','fa-address-card-o' , 'fa-3x']  |
@@ -77,7 +77,7 @@ Once your library is imported, you can use its components in your Angular applic
 | frontTitleColor    | Front Side Title Color    | string    | "rgba(255,255,255,0.5)"               |
 | frontSubTitleColor | Front Side Subtitle Color | string    | "#fff"                                |
 |----------------------------------------------------------------------------------------------------|
-| # Back                                                                                             |
+| # Back Side                                                                                        |
 | backTitle          | Back Title                | string    | "Mobile Phones Are Smart"             |
 | backContent        | Back Description          | string    | "I am A description for Mobile Phone."|
 | backTitleColor     | Back Side Title Color     | string    | "#fff"                                |
