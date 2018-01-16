@@ -2,7 +2,7 @@
     <div id="apf_card" class="shadow">
         <div [ngStyle]="{'background-color': frontBGColor}" class="front face">
             <div class="content">
-                <i [ngClass]="iconCode" [ngStyle]="{'color': iconColor}" aria-hidden="true"></i>
+                <i [ngClass]="iconCode" [ngStyle]="{'color': iconColor, 'box-shadow': box_shadow_padds+iconCicleColor+box_shadow_inset}" aria-hidden="true"></i>
                 <h2 class="title" [ngStyle]="{'color': frontTitleColor}">{{frontTitle}}</h2>
                 <h4 class="sub-title" [ngStyle]="{'color': frontSubTitleColor}">{{frontSubTitle}}</h4>
             </div>

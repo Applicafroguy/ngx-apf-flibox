@@ -51,13 +51,16 @@ Once your library is imported, you can use its components in your Angular applic
 <apf-flipbox
   [frontTitle]="frontTitle" 
   [frontSubTitle]="frontSubTitle"
-  [iconCode]="iconCode" 
-  [iconColor]="'#fff'"
-  [backTitle]="backTitle" 
-  [backContent]="backContent" 
   [frontTitleColor]="'#000'"
   [frontSubTitleColor]="'rgba(255,255,255,0.5)'" 
-  [backTitleColor]="'#000'" 
+  
+  [iconCode]="iconCode" 
+  [iconColor]="'#fff'"
+  [iconCicleColor]="'#fff'"
+
+  [backTitle]="backTitle" 
+  [backContent]="backContent" 
+  [backTitleColor]="'rgba(255,255,255,0.5)'" 
   [backContentColor]="'#000'">
   </apf-flipbox>
 ```
@@ -70,6 +73,7 @@ Once your library is imported, you can use its components in your Angular applic
 | frontSubTitle      | Front SubTitle            | string    | "smart"                               |
 | iconCode           | font awesome css class    | array     | ['fa','fa-address-card-o' , 'fa-3x']  |
 | iconColor          | Icon Color                | string    | "#fff"                                |
+| iconCicleColor     | Icon Color                | string    | "rgba(255,255,255,0.5)"               |
 | frontTitleColor    | Front Side Title Color    | string    | "rgba(255,255,255,0.5)"               |
 | frontSubTitleColor | Front Side Subtitle Color | string    | "#fff"                                |
 |----------------------------------------------------------------------------------------------------|

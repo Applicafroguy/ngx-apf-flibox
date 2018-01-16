@@ -11,6 +11,11 @@ import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 export class FlipBoxComponent implements OnInit {
 
   /**
+   * Default
+   */
+  box_shadow_padds = '0 0 0 0.1em ';
+  box_shadow_inset = ' inset';
+  /**
    * Front Side Inputs
    */
 
@@ -27,6 +32,7 @@ export class FlipBoxComponent implements OnInit {
   // Must Specify Font and Icon
   @Input() iconCode: any[] = ['fa', 'fa-address-card-o' , 'fa-3x'] ;
   @Input() iconColor;
+  @Input() iconCicleColor;
   // ******************************************************************
   /**
    *  Back Side Inputs
