@@ -52,19 +52,32 @@ Once your library is imported, you can use its components in your Angular applic
   [frontTitle]="frontTitle" 
   [frontSubTitle]="frontSubTitle"
   [iconCode]="iconCode" 
+  [iconColor]="'#fff'"
   [backTitle]="backTitle" 
-  [backContent]="backContent">
+  [backContent]="backContent" 
+  [frontTitleColor]="'#000'"
+  [frontSubTitleColor]="'rgba(255,255,255,0.5)'" 
+  [backTitleColor]="'#000'" 
+  [backContentColor]="'#000'">
   </apf-flipbox>
 ```
 ## Inputs
 ```bash
-| Input         | Description            | Data Type      | Example                               |
-| ------------- |:----------------------:| --------------:| -------------------------------------:|
-| frontTitle    | Front Title            | string         | "Mobile Phones"                       |
-| frontSubTitle | Front SubTitle         | string         | "smart"                               |
-| iconCode      | font awesome css class | array          | ['fa','fa-address-card-o' , 'fa-3x']  |
-| backTitle     | Back Title             | string         | "Mobile Phones Are Smart"             |
-| backContent   | Back Description       | string         | "I am A description for Mobile Phone."|
+| Input              | Description               | Data Type | Example                               |
+| -------------------|:-------------------------:| ---------:| -------------------------------------:|
+| # Front                                                                                            |
+| frontTitle         | Front Title               | string    | "Mobile Phones"                       |
+| frontSubTitle      | Front SubTitle            | string    | "smart"                               |
+| iconCode           | font awesome css class    | array     | ['fa','fa-address-card-o' , 'fa-3x']  |
+| iconColor          | Icon Color                | string    | "#fff"                                |
+| frontTitleColor    | Front Side Title Color    | string    | "rgba(255,255,255,0.5)"               |
+| frontSubTitleColor | Front Side Subtitle Color | string    | "#fff"                                |
+|----------------------------------------------------------------------------------------------------|
+| # Back                                                                                             |
+| backTitle          | Back Title                | string    | "Mobile Phones Are Smart"             |
+| backContent        | Back Description          | string    | "I am A description for Mobile Phone."|
+| backTitleColor     | Back Side Title Color     | string    | "#fff"                                |
+| backContentColor   | Back Side Content Color   | string    | "#fff"                                |
 ```
 ## License
 

@@ -1,18 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 
-interface Front {
-  title: string;
-  subtitle: string;
-  icon: string;
 
-}
-
-interface Back {
-  title: string;
-  content: string;
-
-}
 
 @Component({
   selector: 'apf-flipbox',
@@ -21,17 +10,45 @@ interface Back {
 })
 export class FlipBoxComponent implements OnInit {
 
+  /**
+   * Front Side Inputs
+   */
+
+   // Text
   @Input() frontTitle;
   @Input() frontSubTitle;
+
+  // Color Setting
+  @Input() frontBGColor;
+  @Input() frontTitleColor;
+  @Input() frontSubTitleColor;
+
+  // Icon
+  // Must Specify Font and Icon
   @Input() iconCode: any[] = ['fa', 'fa-address-card-o' , 'fa-3x'] ;
+  @Input() iconColor;
+  // ******************************************************************
+  /**
+   *  Back Side Inputs
+   */
+
+   // Text
   @Input() backTitle;
   @Input() backContent;
 
+  // Color Setting
+  @Input() backBGColor;
+  @Input() backTitleColor;
+  @Input() backContentColor;
+
+  // ******************************************************************
+  /**
+   * Constructor
+   */
   constructor() {
 
   }
 
   ngOnInit(): void {
-   
   }
 }

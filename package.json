@@ -71,5 +71,8 @@
     },
     "engines": {
         "node": ">=6.0.0"
+    },
+    "dependencies": {
+        "ngx-apf-flipbox": "^0.1.0-beta.13"
     }
 }

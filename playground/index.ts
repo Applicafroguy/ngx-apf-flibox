@@ -1,5 +1,4 @@
-import { FlipBoxModule } from './../src/index';
-
+import { FlipBoxModule } from 'ngx-apf-flipbox';
 /**
  * This is only for local test
  */
@@ -11,7 +10,20 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 @Component({
   selector: 'app',
-  template: `<apf-flipbox [front]="front" [back]="back"></apf-flipbox>`
+  template: `<apf-flipbox
+  [frontTitle]="'Mobile Application 2'"
+  [frontSubTitle]="'NATIVE & HYBRID APPS'"
+  [iconCode]="['fa', 'fa-camera-retro' , 'fa-3x']"
+  [backTitle]="Back Title"
+  [backContent]="'This is a back side content'"
+  [frontBGColor]="'#c2c2c2'"
+  [backBGColor]="'#cac'"
+  [iconColor]="'#fff'"
+  [frontTitleColor]="'#000'"
+  [frontSubTitleColor]="'#000'"
+  [backTitleColor]="'#000'"
+  [backContentColor]="'#000'"
+  ></apf-flipbox>`
 })
 class AppComponent {}
 
@@ -21,17 +33,11 @@ class AppComponent {}
   imports: [ BrowserModule, FlipBoxModule ]
 })
 class AppModule {
-  title = 'My Title';
-  front: {
-    title: 'My Title',
-    subtitle: 'subtitle',
-    icon: 'icon'
-  }
-
-  back: {
-    title: 'My Title Back',
-    content: 'I am back content',
-  }
+  frontTitle = 'Mobile Application 2';
+  frontSubTitle = 'NATIVE & HYBRID APPS';
+  iconCode= ['fa', 'fa-camera-retro' , 'fa-3x'] ;
+  backTitle= 'Back Title';
+  backContent = 'This is a back side content';
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule);
