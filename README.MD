@@ -32,7 +32,7 @@ import { FlipBoxModule } from 'ngx-apf-flipbox';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
+    // Specify this library as an import
     FlipBoxModule
   ],
   providers: [],
@@ -44,7 +44,7 @@ export class AppModule { }
 Once your library is imported, you can use its components in your Angular application:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
+<!-- You can now use this library component in app.component.html -->
 <h1>
   {{title}}
 </h1>
