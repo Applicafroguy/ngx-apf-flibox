@@ -65,10 +65,10 @@ Once your library is imported, you can use its components in your Angular applic
   </apf-flipbox>
 ```
 ## Inputs
-```bash
+
 | Input              | Description               | Data Type | Example                               |
-| -------------------|:-------------------------:| ---------:| -------------------------------------:|
-| # Front Side                                                                                       |
+| -------------------|-------------------------| ---------| -------------------------------------|  
+| **FRONT SIDE** |
 | frontTitle         | Front Title               | string    | "Mobile Phones"                       |
 | frontSubTitle      | Front SubTitle            | string    | "smart"                               |
 | iconCode           | font awesome css class    | array     | ['fa','fa-address-card-o' , 'fa-3x']  |
@@ -76,13 +76,13 @@ Once your library is imported, you can use its components in your Angular applic
 | iconCicleColor     | Icon Color                | string    | "rgba(255,255,255,0.5)"               |
 | frontTitleColor    | Front Side Title Color    | string    | "rgba(255,255,255,0.5)"               |
 | frontSubTitleColor | Front Side Subtitle Color | string    | "#fff"                                |
-|----------------------------------------------------------------------------------------------------|
-| # Back Side                                                                                        |
+||
+| **BACK SIDE**
 | backTitle          | Back Title                | string    | "Mobile Phones Are Smart"             |
 | backContent        | Back Description          | string    | "I am A description for Mobile Phone."|
 | backTitleColor     | Back Side Title Color     | string    | "#fff"                                |
 | backContentColor   | Back Side Content Color   | string    | "#fff"                                |
-```
+
 ## License
 
 MIT © [Sivuyile Magutywa](mailto:s.magutywa@applicafro.co.za)
